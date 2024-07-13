@@ -15,7 +15,7 @@ const app: Application = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(cors({ origin: ['https://sports-product-assignment-4-frontend.vercel.app/'], credentials: true }));
+app.use(cors({ origin: ['https://sports-product-assignment-4-frontend.vercel.app'], credentials: true }));
 // ['http://localhost:5173']
 // application routes
 app.use('/api/v1', router); // /api/v1 will prefix all the route. This is the connection with the index.ts file inside the routes folder. 
